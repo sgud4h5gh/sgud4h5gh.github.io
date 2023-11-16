@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite-url/tags/index.html</loc>
+    
+    <lastmod>2023-11-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/categories/index.html</loc>
+    
+    <lastmod>2023-11-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/2023%20newstartctf%20pwn%20%E5%A4%8D%E7%9B%98/2023%20newstartctf%20week4%20pwn%20%E5%A4%8D%E7%9B%98/</loc>
     
     <lastmod>2023-11-16</lastmod>
@@ -9,14 +23,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/index.html</loc>
-    
-    <lastmod>2023-11-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/categories/index.html</loc>
+    <loc>http://yoursite-url/about/index.html</loc>
     
     <lastmod>2023-11-15</lastmod>
     
@@ -33,13 +40,6 @@
     <loc>http://yoursite-url/archive/index.html</loc>
     
     <lastmod>2017-03-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/about/index.html</loc>
-    
-    <lastmod>2016-04-20</lastmod>
     
   </url>
   
