@@ -517,20 +517,17 @@
       
     </h3>
     <div class="post-content-preview">
-      Double
+      ezheap
+exp1 - mmap泄露libc地址
 
-只有一个add和free，没有打印。
+保护全开
 
-一道double free的题目。
-double free
-free第一次，free掉了chunk2，但是fd是0。
+add（）函数，首先创建了一个0x20的堆用来存储信息和一个存放数据的堆。
+第一个堆的最后存放了存放数据的堆的地址。
+首位存放了第二个堆的大小。
 
-free第二次
-free第三次
-
-这个时候我们chunk的fd互相指向对方，我们可以通过构造fake_chunk实现任意地址写。
-
-12345678910111213141516171819202122from pwn......
+delete函数没有free掉指针。存在一个uaf漏洞
+12345678910add(0,0x20,b&#x27;/bin/sh&#x27;)add(1,0x40000,b&#x......
     </div>
   </a>
   
