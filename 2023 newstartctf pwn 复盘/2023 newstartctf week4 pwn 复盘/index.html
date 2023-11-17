@@ -142,7 +142,7 @@
   <link rel="canonical" href="http://yoursite-url/2023 newstartctf pwn 复盘/2023 newstartctf week4 pwn 复盘/">
   <title>
     
-      2023 newstartctf week4 复盘 - null
+      2023 newstartctf week4 复盘 - pwn
     
   </title>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -239,7 +239,7 @@
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/">HOME</a>
+            <a href="/">首页</a>
           </li>
 
           
@@ -249,7 +249,7 @@
           <li>
             <a href="/archive/">
               
-              ARCHIVES
+              归档
               
               
             </a>
@@ -260,7 +260,7 @@
           <li>
             <a href="/categories/">
               
-              CATEGORIES
+              分类
               
               
             </a>
@@ -271,7 +271,7 @@
           <li>
             <a href="/tags/">
               
-              TAGS
+              标签
               
               
             </a>
@@ -282,7 +282,7 @@
           <li>
             <a href="/about/">
               
-              ABOUT
+              关于
               
               
             </a>
@@ -293,7 +293,7 @@
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>SEARCH</a>
+              <span class="search-icon"></span>搜索</a>
           </li>
           
 
@@ -592,7 +592,7 @@ free bin的地址加上size应该指向另外一个chunk。</p>
 <div class="tip">
   <p>
     
-      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
     
   </p>
 </div>
@@ -668,7 +668,7 @@ free bin的地址加上size应该指向另外一个chunk。</p>
       distractionFreeMode: false, // Facebook-like distraction free mode
       perPage: 10,
       pagerDirection: 'last',
-      createIssueManually: false,
+      createIssueManually: true,
       language: 'en',
       proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
     });
@@ -715,7 +715,7 @@ free bin的地址加上size应该指向另外一个chunk。</p>
     
       <aside id="sidebar">
         <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
+        <strong class="toc-title">目录</strong>
         
           <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Double"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Double</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ezheap"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">ezheap</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp1-mmap%E6%B3%84%E9%9C%B2libc%E5%9C%B0%E5%9D%80"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">exp1 - mmap泄露libc地址</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp2-leak-unsorted-bin%E5%BE%97%E5%88%B0main-arena%E7%9A%84%E5%9C%B0%E5%9D%80"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">exp2  - leak unsorted_bin得到main_arena的地址</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#game"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">game</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#god-of-change"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">god_of_change</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp1"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">exp1</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#leak-libc"><span class="toc-nav-number">4.1.1.</span> <span class="toc-nav-text">leak libc</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E8%A6%86%E7%9B%96free-hook%E4%B8%BAsystem"><span class="toc-nav-number">4.1.2.</span> <span class="toc-nav-text">覆盖free_hook为system</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#exp2"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">exp2</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">参考文章</span></a></li></ol>
         
@@ -736,7 +736,7 @@ free bin的地址加上size应该指向另外一个chunk。</p>
         <section>
           <!-- no hr -->
           <h5>
-            <a href="/tags/">FEATURED TAGS</a>
+            <a href="/tags/">特色标签</a>
           </h5>
           <div class="tags">
             
@@ -749,7 +749,7 @@ free bin的地址加上size应该指向另外一个chunk。</p>
         <!-- Friends Blog -->
         
         <hr>
-        <h5>FRIENDS</h5>
+        <h5>链友</h5>
         <ul class="list-inline">
 
           
@@ -979,7 +979,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>
